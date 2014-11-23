@@ -1,5 +1,5 @@
 {
-  "name": "angulartest",
+  "name": "angular-2",
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
@@ -8,7 +8,8 @@
     "bourbon": "~4.0.2",
     "neat": "~1.6.0",
     "normalize-css": "~3.0.1",
-    "angular": "~1.3.2",
-    "angular-route": "~1.3.3"
+    "angular": "~1.3.3",
+    "angular-route": "~1.3.3",
+    "restangular": "~1.4.0"
   }
 }

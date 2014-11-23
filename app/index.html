@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>AngularTest</title>
+    <title>Angular Test</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -22,27 +22,27 @@
     <!-- endbuild -->
   </head>
   <body>
-    <div ng-app="">
+
+   <div ng-app="">
       <div ng-controller="NameCtrl">
-        First Name:<input ng-model="firstname" type="text">
+        First Name:<input ng-model="firstName" type="text">
         <br></br>
-        Last Name:<input ng-model="lastname" type="text">
+        Last Name:<input ng-model="lastName" type="text">
         <br></br>
-        Hello {{firstname}} {{lastname}}
+        Hello {{firstName}} {{lastName}}
       </div>
     </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
     <script src="../bower_components/angular-route/angular-route.min.js"></script>
-
+    <script src="../bower_components/restangular/dist/restangular.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/firstController.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

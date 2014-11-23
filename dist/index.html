@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>AngularTest</title>
+    <title>Angular Test</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="styles/vendor.css">
@@ -13,16 +13,17 @@
 
     <script src="scripts/vendor/modernizr.js"></script>
   </head>
-  <body>
-    <div ng-app="">
-      <div ng-controller="NameCtrl">
-        First Name:<input ng-model="firstname" type="text">
-        <br></br>
-        Last Name:<input ng-model="lastname" type="text">
-        <br></br>
-        Hello {{firstname}} {{lastname}}
-      </div>
+  <body ng-app="HolidayList">
+
+    <div class="hero-unit">
+      <h1>Angular Testing</h1>
+      <nav>
+        <a href="#/">Home</a> 
+        <a href="#/add">Add</a>
+    </nav>
+      <div ng-view></div>
     </div>
+
     <script src="scripts/vendor.js"></script>
 
         <script src="scripts/main.js"></script>

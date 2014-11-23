@@ -1,5 +1,5 @@
 {
-  "name": "angulartest",
+  "name": "angular-2",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",
