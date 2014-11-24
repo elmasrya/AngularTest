@@ -21,21 +21,17 @@
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-app="BookApp">
 
-  <div ng-app="BookApp">
-
-    <div ng-controller="FirstCtrl">
-      <input type="text" ng-model="data.message">
-      <h1>{{data.message}}</h1>
+    <div class="container">
+      <h1>Angular Testing</h1>
+      <nav>
+        <a href="#/">Home</a>
+        <a href="#/add">Add</a>
+    </nav>
+      <div ng-view></div>
     </div>
 
-    <div ng-controller="SecondCtrl">
-      <input type="text" ng-model="data.message">
-      <h1>{{data.message}}</h1>
-    </div>
-
-  </div><!--end of app-->
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -49,9 +45,8 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/booksFactory.js"></script>
+        <script src="scripts/booksController.js"></script>
 
-        <script src="scripts/SecondCtrl.js"></script>
-        <script src="scripts/FirstCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,0 +1,24 @@
+<form ng-submit="addBook(book)"><br/>
+Book Title:
+<input ng-model="book.title" placeholder="Book Title" /><br></br>
+Reading Level: <select ng-model="book.level" name="select" id="addlevel">
+  <option value="firstG" selected>1st Grade</option>
+  <option value="secondG" selected>2nd Grade</option>
+  <option value="thirdG" selected>3rd Grade</option>
+  <option value="fourthG" selected>4th Grade</option>
+  <option value="fifthG" selected>5th Grade</option>
+  <option value="sixthG" selected>6th Grade</option>
+  <option value="seventhG" selected>7th Grade</option>
+  <option value="eighthG" selected>8th Grade</option>
+  <option value="ninthG" selected>9thGrade</option>
+  <option value="tenthG"  selected>10th Grade</option>
+  <option value="elevethG" selected>11thGrade</option>
+  <option value="twelthG"  selected>12th Grade</option>
+</select><br></br>
+How many words in the book? <input ng-model="book.wordCount" placeholder="Word Count"/><br></br>
+How many days do you want this book finished by? :<input ng-model="book.days" placeholder="How many days?" /><br></br>
+
+
+<button>Add Book</button>
+
+</form>

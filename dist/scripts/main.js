@@ -5,7 +5,7 @@
 
   app.config( function ($routeProvider, RestangularProvider) {
 
-    RestangularProvider.setBaseUrl('http://tiy-atl-fe-server.herokuapp.com/collections/');
+    RestangularProvider.setBaseUrl('http://tiy-atl-fe-server.herokuapp.com/collections/enomosayos');
 
     $routeProvider.when('/', {
       templateUrl: 'templates/home.html',
@@ -41,7 +41,7 @@
   angular.module('HolidayList')
     .factory('giftsFactory', ['$rootScope', 'Restangular', function ($rootScope, Restangular) {
 
-      var giftsBase = Restangular.all('enomosayos');
+      var giftsBase = Restangular.all('holidaylist');
 
       function getGifts () {
         // return $http.get(url);
@@ -73,7 +73,6 @@
     }]);
 
 }());
-
 (function () {
 
   angular.module('HolidayList')
