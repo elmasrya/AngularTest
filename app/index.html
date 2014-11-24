@@ -23,15 +23,14 @@
   </head>
   <body>
 
-   <div ng-app="">
-      <div ng-controller="NameCtrl">
-        First Name:<input ng-model="firstName" type="text">
-        <br></br>
-        Last Name:<input ng-model="lastName" type="text">
-        <br></br>
-        Hello {{firstName}} {{lastName}}
+  <div ng-app="myAppName">
+    <div ng-controller="FirstCtrl">
+      <h1>{{data.message + " world"}}</h1>
+      <div class="{{data.message}}">
+      Wrap me in a foundation component
       </div>
     </div>
+  </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -43,6 +42,7 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/FirstCtrl.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
