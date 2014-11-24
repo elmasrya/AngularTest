@@ -1,4 +1,4 @@
-angular.module('myAppName', [])
-    .controller('FirstCtrl', function($scope) {
-          $scope.data = {message: "Hello"};
-    });
+angular.module('myAppName').controller('FirstCtrl',
+['$scope', function($scope){
+
+}]);
