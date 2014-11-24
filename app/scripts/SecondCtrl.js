@@ -1,3 +1,3 @@
-angular.module('myAppName').controller('SecondCtrl', ['$scope', function($scope){
+angular.module('BookApp').controller('SecondCtrl', ['$scope', function($scope){
 
 }]);

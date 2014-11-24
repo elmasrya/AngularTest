@@ -1,1 +1,1 @@
-angular.module('myAppName', []);
+var BookApp = angular.module('BookApp', []);

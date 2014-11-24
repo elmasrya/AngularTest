@@ -1,4 +1,4 @@
-angular.module('myAppName').controller('FirstCtrl',
+angular.module('BookApp').controller('FirstCtrl',
 ['$scope', function($scope){
 
 }]);
