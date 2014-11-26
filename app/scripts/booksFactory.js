@@ -3,10 +3,9 @@
   angular.module('BookApp')
     .factory('booksFactory', ['$rootScope', 'Restangular', function ($rootScope, Restangular) {
 
-      var bookStart = Restangular.all('enomosayos');
+      var bookStart = Restangular.all('ethowab');
 
       function getBooks () {
-        // return $http.get(url);
         return bookStart.getList();
       }
 

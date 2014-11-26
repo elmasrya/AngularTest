@@ -17,21 +17,12 @@
       controller: 'BooksController'
     });
 
-    $routeProvider.when('/add', {
-      templateUrl: 'templates/add.html',
+    $routeProvider.when('/addBook', {
+      templateUrl: 'templates/addBook.html',
       controller: 'BooksController'
     })
 
   });
 
-  app.directive('clickTurkey', function () {
-    return {
-      link: function ($scope, element, attrs) {
-        element.bind('click', function () {
-          console.log('my turkey directive was run');
-        });
-      }
-    }
-  });
 
 }());
