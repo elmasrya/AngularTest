@@ -17,22 +17,13 @@
       controller: 'BooksController'
     });
 
-    $routeProvider.when('/add', {
-      templateUrl: 'templates/add.html',
+    $routeProvider.when('/addBook', {
+      templateUrl: 'templates/addBook.html',
       controller: 'BooksController'
     })
 
   });
 
-  app.directive('clickTurkey', function () {
-    return {
-      link: function ($scope, element, attrs) {
-        element.bind('click', function () {
-          console.log('my turkey directive was run');
-        });
-      }
-    }
-  });
 
 }());
 
@@ -41,10 +32,9 @@
   angular.module('BookApp')
     .factory('booksFactory', ['$rootScope', 'Restangular', function ($rootScope, Restangular) {
 
-      var bookStart = Restangular.all('enomosayos');
+      var bookStart = Restangular.all('ethowab');
 
       function getBooks () {
-        // return $http.get(url);
         return bookStart.getList();
       }
 
@@ -77,7 +67,7 @@
   angular.module('BookApp')
     .controller('BooksController',
       ['booksFactory', '$scope', '$location', '$rootScope',
-        function booksFactory, $scope, $location, $rootScope) {
+        function (booksFactory, $scope, $location, $rootScope) {
 
         booksFactory.getBooks().then( function (results) {
           $scope.books = results;
