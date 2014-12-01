@@ -10,7 +10,6 @@
       }
 
       function getBook (id) {
-        //return $http.get(url + id);
         return bookStart.get(id);
       }
 
