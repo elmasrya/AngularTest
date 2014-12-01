@@ -12,6 +12,10 @@
       controller: 'BooksController'
     });
 
+    $routeProvider.when('/single/:id', {
+      templateUrl: 'templates/single.html',
+      controller: 'BooksController'
+    });
 
     $routeProvider.when('/addBook', {
       templateUrl: 'templates/addBook.html',
